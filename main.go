@@ -28,7 +28,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	num := 190
+	num := 300
 	var wg sync.WaitGroup
 	wg.Add(num)
 	for i := 0; i < num; i++ {
