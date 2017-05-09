@@ -28,26 +28,45 @@ func main() {
 		os.Exit(1)
 	}
 
-	num := 190
+	var num int
+	fmt.Println("input times")
+	fmt.Scanf("%d", &num)
+	counterBad := 0
+	counterGood := 0
+	timeout := time.Second * 10
+	var mug sync.Mutex
+	var mub sync.Mutex
 	var wg sync.WaitGroup
 	wg.Add(num)
 	for i := 0; i < num; i++ {
-		time.Sleep(time.Millisecond * 3)
+		//time.Sleep(time.Millisecond * 3)
 		ii := i
 		go func() {
-			start := time.Now()
 			defer wg.Done()
+			start := time.Now()
 			_, err := hrpc.Invoke(passengerAddr, contractAddr, passengerPriKey, contractABI, "passengerSubmitOrder", false, "120143722", "30283618", "121000000", "31000000", "123", "passinfo", "qidian", "zhongdian")
-			//log.Printf("Invoke to \"passengerSubmitOrder\", Return Type: %T, Return Value: %v\n", ret, ret)
+			duration := time.Since(start)
 			if err != nil {
-				log.Println(err)
-				os.Exit(1)
+				fmt.Println("no.", ii, err)
+				mub.Lock()
+				counterBad++
+				mub.Unlock()
+				return
 			}
-			fmt.Println("no.", ii, time.Since(start).Seconds())
+			if duration > timeout {
+				mub.Lock()
+				counterBad++
+				mub.Unlock()
+			} else {
+				mug.Lock()
+				counterGood++
+				mug.Unlock()
+				fmt.Println("no.", ii, duration.Seconds())
+			}
 		}()
 	}
 	wg.Wait()
-
+	fmt.Printf("Good has %d\n Bad has %d\n", counterGood, counterBad)
 	//passengerSubmitOrder
 	// ret, err := hrpc.Invoke(passengerAddr, contractAddr, passengerPriKey, contractABI, "passengerSubmitOrder", false, "120143722", "30283618", "121000000", "31000000", "123", "passinfo", "qidian", "zhongdian")
 	// log.Printf("Invoke to \"passengerSubmitOrder\", Return Type: %T, Return Value: %v\n", ret, ret)
