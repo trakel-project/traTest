@@ -28,45 +28,72 @@ func main() {
 		os.Exit(1)
 	}
 
+	f, err := os.OpenFile("./result.txt", os.O_WRONLY|os.O_APPEND, 0666)
+	defer f.Close()
+	if err != nil {
+		log.Println("File open failed", err)
+		os.Exit(1)
+	}
+
 	var num int
 	fmt.Println("input times")
 	fmt.Scanf("%d", &num)
-	counterBad := 0
-	counterGood := 0
-	timeout := time.Second * 10
-	var mug sync.Mutex
-	var mub sync.Mutex
-	var wg sync.WaitGroup
-	wg.Add(num)
-	for i := 0; i < num; i++ {
-		//time.Sleep(time.Millisecond * 3)
-		ii := i
-		go func() {
-			defer wg.Done()
-			start := time.Now()
-			_, err := hrpc.Invoke(passengerAddr, contractAddr, passengerPriKey, contractABI, "passengerSubmitOrder", false, "120143722", "30283618", "121000000", "31000000", "123", "passinfo", "qidian", "zhongdian")
-			duration := time.Since(start)
-			if err != nil {
-				fmt.Println("no.", ii, err)
-				mub.Lock()
-				counterBad++
-				mub.Unlock()
-				return
-			}
-			if duration > timeout {
-				mub.Lock()
-				counterBad++
-				mub.Unlock()
-			} else {
-				mug.Lock()
-				counterGood++
-				mug.Unlock()
-				fmt.Println("no.", ii, duration.Seconds())
-			}
-		}()
+
+	str := fmt.Sprintf("Input size: %d\n", num)
+	f.Write([]byte(str))
+	str = fmt.Sprintln("Start Time", time.Now())
+	fmt.Print(str)
+	f.Write([]byte(str))
+	for j := 0; j < 10; j++ {
+		counterBad := 0
+		counterGood := 0
+		timeout := time.Second * 10
+		var mu sync.Mutex
+		var wg sync.WaitGroup
+		wg.Add(num)
+		//fmt.Println("Start Time", time.Now())
+		for i := 0; i < num; i++ {
+			//用于模拟在1秒内等间隔发送num笔订单
+			//如果模拟的是同时发送num笔订单则注释下面语句
+			time.Sleep(time.Second / time.Duration(num))
+			//ii := i
+			go func() {
+				defer wg.Done()
+				start := time.Now()
+				_, err := hrpc.Invoke(passengerAddr, contractAddr, passengerPriKey, contractABI, "passengerSubmitOrder", false, "120143722", "30283618", "121000000", "31000000", "123", "passinfo", "qidian", "zhongdian")
+				duration := time.Since(start)
+				if err != nil {
+					//fmt.Println("no.", ii, err)
+					mu.Lock()
+					counterBad++
+					fmt.Printf("\rNo.%d Good has %d Bad has %d, Good rate is %.2f%%", j+1, counterGood, counterBad, float64(counterGood)/float64(counterBad+counterGood)*100)
+					mu.Unlock()
+					return
+				}
+				if duration > timeout {
+					mu.Lock()
+					counterBad++
+					fmt.Printf("\rNo.%d Good has %d Bad has %d, Good rate is %.2f%%", j+1, counterGood, counterBad, float64(counterGood)/float64(counterBad+counterGood)*100)
+					mu.Unlock()
+				} else {
+					mu.Lock()
+					counterGood++
+					fmt.Printf("\rNo.%d Good has %d Bad has %d, Good rate is %.2f%%", j+1, counterGood, counterBad, float64(counterGood)/float64(counterBad+counterGood)*100)
+					mu.Unlock()
+					//fmt.Println("no.", ii, duration.Seconds())
+				}
+			}()
+		}
+		// fmt.Println("End Time", time.Now())
+		wg.Wait()
+		str = fmt.Sprintf("No.%d Good has %d Bad has %d, Good rate is %.2f%%\n", j+1, counterGood, counterBad, float64(counterGood)/float64(counterBad+counterGood)*100)
+		f.Write([]byte(str))
+		fmt.Println()
+		time.Sleep(time.Second * 3)
 	}
-	wg.Wait()
-	fmt.Printf("Good has %d\n Bad has %d\n", counterGood, counterBad)
+
+	//TODO 测试query
+
 	//passengerSubmitOrder
 	// ret, err := hrpc.Invoke(passengerAddr, contractAddr, passengerPriKey, contractABI, "passengerSubmitOrder", false, "120143722", "30283618", "121000000", "31000000", "123", "passinfo", "qidian", "zhongdian")
 	// log.Printf("Invoke to \"passengerSubmitOrder\", Return Type: %T, Return Value: %v\n", ret, ret)
