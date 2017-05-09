@@ -58,3 +58,39 @@ No.7 Good has 1400 Bad has 0, Good rate is 100.00%
 No.8 Good has 1398 Bad has 2, Good rate is 99.86%
 No.9 Good has 1400 Bad has 0, Good rate is 100.00%
 No.10 Good has 1400 Bad has 0, Good rate is 100.00%
+Input size: 1500
+Start Time 2017-05-09 14:53:43.055857636 +0800 CST
+No.1 Good has 1466 Bad has 34, Good rate is 97.73%
+No.2 Good has 1497 Bad has 3, Good rate is 99.80%
+No.3 Good has 1471 Bad has 29, Good rate is 98.07%
+No.4 Good has 1499 Bad has 1, Good rate is 99.93%
+No.5 Good has 1496 Bad has 4, Good rate is 99.73%
+No.6 Good has 1498 Bad has 2, Good rate is 99.87%
+No.7 Good has 1498 Bad has 2, Good rate is 99.87%
+No.8 Good has 1492 Bad has 8, Good rate is 99.47%
+No.9 Good has 1481 Bad has 19, Good rate is 98.73%
+No.10 Good has 1485 Bad has 15, Good rate is 99.00%
+Input size: 2000
+Start Time 2017-05-09 14:56:18.029271716 +0800 CST
+No.1 Good has 1977 Bad has 23, Good rate is 98.85%
+No.2 Good has 1984 Bad has 16, Good rate is 99.20%
+No.3 Good has 1794 Bad has 206, Good rate is 89.70%
+No.4 Good has 1657 Bad has 343, Good rate is 82.85%
+No.5 Good has 1984 Bad has 16, Good rate is 99.20%
+No.6 Good has 1855 Bad has 145, Good rate is 92.75%
+No.7 Good has 1989 Bad has 11, Good rate is 99.45%
+No.8 Good has 1997 Bad has 3, Good rate is 99.85%
+No.9 Good has 1865 Bad has 135, Good rate is 93.25%
+No.10 Good has 1978 Bad has 22, Good rate is 98.90%
+Input size: 3000
+Start Time 2017-05-09 15:00:53.862824273 +0800 CST
+No.1 Good has 2556 Bad has 444, Good rate is 85.20%
+No.2 Good has 2213 Bad has 787, Good rate is 73.77%
+No.3 Good has 1945 Bad has 1055, Good rate is 64.83%
+No.4 Good has 1834 Bad has 1166, Good rate is 61.13%
+No.5 Good has 1994 Bad has 1006, Good rate is 66.47%
+No.6 Good has 2149 Bad has 851, Good rate is 71.63%
+No.7 Good has 1660 Bad has 1340, Good rate is 55.33%
+No.8 Good has 2921 Bad has 79, Good rate is 97.37%
+No.9 Good has 1406 Bad has 1594, Good rate is 46.87%
+No.10 Good has 2998 Bad has 2, Good rate is 99.93%
