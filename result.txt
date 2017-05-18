@@ -1,96 +1,115 @@
-Input size: 1000
-Start Time 2017-05-09 14:27:22.693824606 +0800 CST
+No.1 Good has 0 Bad has 100, Good rate is 0.00%
+No.2 Good has 0 Bad has 100, Good rate is 0.00%
+No.3 Good has 0 Bad has 100, Good rate is 0.00%
+No.4 Good has 0 Bad has 100, Good rate is 0.00%
+No.5 Good has 0 Bad has 100, Good rate is 0.00%
+No.6 Good has 0 Bad has 100, Good rate is 0.00%
+No.7 Good has 0 Bad has 100, Good rate is 0.00%
+No.8 Good has 0 Bad has 100, Good rate is 0.00%
+No.9 Good has 0 Bad has 100, Good rate is 0.00%
+No.10 Good has 0 Bad has 100, Good rate is 0.00%
+
+Invoke getPassengerState
+No.1 Good has 100 Bad has 0, Good rate is 100.00%
+No.2 Good has 100 Bad has 0, Good rate is 100.00%
+No.3 Good has 100 Bad has 0, Good rate is 100.00%
+No.4 Good has 100 Bad has 0, Good rate is 100.00%
+No.5 Good has 100 Bad has 0, Good rate is 100.00%
+No.6 Good has 100 Bad has 0, Good rate is 100.00%
+No.7 Good has 100 Bad has 0, Good rate is 100.00%
+No.8 Good has 100 Bad has 0, Good rate is 100.00%
+No.9 Good has 100 Bad has 0, Good rate is 100.00%
+No.10 Good has 100 Bad has 0, Good rate is 100.00%
+
+Invoke getPassengerState
+No.1 Good has 100 Bad has 0, Good rate is 100.00%
+No.2 Good has 100 Bad has 0, Good rate is 100.00%
+No.3 Good has 100 Bad has 0, Good rate is 100.00%
+No.4 Good has 100 Bad has 0, Good rate is 100.00%
+No.5 Good has 100 Bad has 0, Good rate is 100.00%
+No.6 Good has 100 Bad has 0, Good rate is 100.00%
+No.7 Good has 100 Bad has 0, Good rate is 100.00%
+No.8 Good has 100 Bad has 0, Good rate is 100.00%
+No.9 Good has 100 Bad has 0, Good rate is 100.00%
+No.10 Good has 100 Bad has 0, Good rate is 100.00%
+
+Invoke getPassengerState
+No.1 Good has 100 Bad has 0, Good rate is 100.00%
+No.2 Good has 100 Bad has 0, Good rate is 100.00%
+No.7 Good has 100 Bad has 0, Good rate is 100.00%
+No.8 Good has 100 Bad has 0, Good rate is 100.00%
+No.9 Good has 100 Bad has 0, Good rate is 100.00%
+No.10 Good has 100 Bad has 0, Good rate is 100.00%
+
+Invoke getPassengerState
 No.1 Good has 1000 Bad has 0, Good rate is 100.00%
 No.2 Good has 1000 Bad has 0, Good rate is 100.00%
 No.3 Good has 1000 Bad has 0, Good rate is 100.00%
 No.4 Good has 1000 Bad has 0, Good rate is 100.00%
 No.5 Good has 1000 Bad has 0, Good rate is 100.00%
-No.6 Good has 1000 Bad has 0, Good rate is 100.00%
-No.7 Good has 1000 Bad has 0, Good rate is 100.00%
-No.8 Good has 1000 Bad has 0, Good rate is 100.00%
+No.6 Good has 851 Bad has 149, Good rate is 85.10%
+No.7 Good has 760 Bad has 240, Good rate is 76.00%
+No.8 Good has 999 Bad has 1, Good rate is 99.90%
 No.9 Good has 1000 Bad has 0, Good rate is 100.00%
-No.10 Good has 1000 Bad has 0, Good rate is 100.00%
-Input size: 1100
-Start Time 2017-05-09 14:29:46.911417503 +0800 CST
-No.1 Good has 1010 Bad has 90, Good rate is 91.82%
-No.2 Good has 0 Bad has 1100, Good rate is 0.00%
-No.3 Good has 0 Bad has 1100, Good rate is 0.00%
-No.4 Good has 0 Bad has 1100, Good rate is 0.00%
-No.5 Good has 0 Bad has 1100, Good rate is 0.00%
-No.6 Good has 0 Bad has 1100, Good rate is 0.00%
-No.7 Good has 0 Bad has 1100, Good rate is 0.00%
-No.8 Good has 0 Bad has 1100, Good rate is 0.00%
-No.9 Good has 695 Bad has 405, Good rate is 63.18%
-No.10 Good has 1100 Bad has 0, Good rate is 100.00%
-Input size: 1200
-Start Time 2017-05-09 14:37:55.786966814 +0800 CST
-No.1 Good has 1200 Bad has 0, Good rate is 100.00%
-No.2 Good has 1186 Bad has 14, Good rate is 98.83%
-No.3 Good has 1200 Bad has 0, Good rate is 100.00%
-No.4 Good has 1184 Bad has 16, Good rate is 98.67%
-No.5 Good has 1194 Bad has 6, Good rate is 99.50%
-No.6 Good has 1197 Bad has 3, Good rate is 99.75%
-No.7 Good has 1169 Bad has 31, Good rate is 97.42%
-No.8 Good has 1198 Bad has 2, Good rate is 99.83%
-No.9 Good has 1200 Bad has 0, Good rate is 100.00%
-No.10 Good has 1200 Bad has 0, Good rate is 100.00%
-Input size: 1300
-Start Time 2017-05-09 14:40:53.995953789 +0800 CST
-No.1 Good has 1281 Bad has 19, Good rate is 98.54%
-No.2 Good has 1278 Bad has 22, Good rate is 98.31%
-No.3 Good has 1300 Bad has 0, Good rate is 100.00%
-No.4 Good has 1300 Bad has 0, Good rate is 100.00%
-No.5 Good has 1300 Bad has 0, Good rate is 100.00%
-No.6 Good has 1300 Bad has 0, Good rate is 100.00%
-No.7 Good has 1300 Bad has 0, Good rate is 100.00%
-No.8 Good has 1300 Bad has 0, Good rate is 100.00%
-No.9 Good has 798 Bad has 502, Good rate is 61.38%
-No.10 Good has 1300 Bad has 0, Good rate is 100.00%
-Input size: 1400
-Start Time 2017-05-09 14:43:40.685411678 +0800 CST
-No.1 Good has 1391 Bad has 9, Good rate is 99.36%
-No.2 Good has 1394 Bad has 6, Good rate is 99.57%
-No.3 Good has 1400 Bad has 0, Good rate is 100.00%
-No.4 Good has 1297 Bad has 103, Good rate is 92.64%
-No.5 Good has 1290 Bad has 110, Good rate is 92.14%
-No.6 Good has 1397 Bad has 3, Good rate is 99.79%
-No.7 Good has 1400 Bad has 0, Good rate is 100.00%
-No.8 Good has 1398 Bad has 2, Good rate is 99.86%
-No.9 Good has 1400 Bad has 0, Good rate is 100.00%
-No.10 Good has 1400 Bad has 0, Good rate is 100.00%
-Input size: 1500
-Start Time 2017-05-09 14:53:43.055857636 +0800 CST
-No.1 Good has 1466 Bad has 34, Good rate is 97.73%
-No.2 Good has 1497 Bad has 3, Good rate is 99.80%
-No.3 Good has 1471 Bad has 29, Good rate is 98.07%
-No.4 Good has 1499 Bad has 1, Good rate is 99.93%
-No.5 Good has 1496 Bad has 4, Good rate is 99.73%
-No.6 Good has 1498 Bad has 2, Good rate is 99.87%
-No.7 Good has 1498 Bad has 2, Good rate is 99.87%
-No.8 Good has 1492 Bad has 8, Good rate is 99.47%
-No.9 Good has 1481 Bad has 19, Good rate is 98.73%
-No.10 Good has 1485 Bad has 15, Good rate is 99.00%
-Input size: 2000
-Start Time 2017-05-09 14:56:18.029271716 +0800 CST
-No.1 Good has 1977 Bad has 23, Good rate is 98.85%
-No.2 Good has 1984 Bad has 16, Good rate is 99.20%
-No.3 Good has 1794 Bad has 206, Good rate is 89.70%
-No.4 Good has 1657 Bad has 343, Good rate is 82.85%
-No.5 Good has 1984 Bad has 16, Good rate is 99.20%
-No.6 Good has 1855 Bad has 145, Good rate is 92.75%
-No.7 Good has 1989 Bad has 11, Good rate is 99.45%
-No.8 Good has 1997 Bad has 3, Good rate is 99.85%
-No.9 Good has 1865 Bad has 135, Good rate is 93.25%
-No.10 Good has 1978 Bad has 22, Good rate is 98.90%
-Input size: 3000
-Start Time 2017-05-09 15:00:53.862824273 +0800 CST
-No.1 Good has 2556 Bad has 444, Good rate is 85.20%
-No.2 Good has 2213 Bad has 787, Good rate is 73.77%
-No.3 Good has 1945 Bad has 1055, Good rate is 64.83%
-No.4 Good has 1834 Bad has 1166, Good rate is 61.13%
-No.5 Good has 1994 Bad has 1006, Good rate is 66.47%
-No.6 Good has 2149 Bad has 851, Good rate is 71.63%
-No.7 Good has 1660 Bad has 1340, Good rate is 55.33%
-No.8 Good has 2921 Bad has 79, Good rate is 97.37%
-No.9 Good has 1406 Bad has 1594, Good rate is 46.87%
-No.10 Good has 2998 Bad has 2, Good rate is 99.93%
+No.10 Good has 994 Bad has 6, Good rate is 99.40%
+
+Invoke getPassengerState
+No.1 Good has 0 Bad has 1000, Good rate is 0.00%
+No.2 Good has 0 Bad has 1000, Good rate is 0.00%
+No.3 Good has 0 Bad has 1000, Good rate is 0.00%
+No.4 Good has 0 Bad has 1000, Good rate is 0.00%
+No.5 Good has 0 Bad has 1000, Good rate is 0.00%
+No.6 Good has 0 Bad has 1000, Good rate is 0.00%
+No.7 Good has 0 Bad has 1000, Good rate is 0.00%
+No.8 Good has 0 Bad has 1000, Good rate is 0.00%
+No.9 Good has 0 Bad has 1000, Good rate is 0.00%
+No.10 Good has 0 Bad has 1000, Good rate is 0.00%
+
+Invoke getPassengerState
+No.1 Good has 0 Bad has 200, Good rate is 0.00%
+No.2 Good has 0 Bad has 200, Good rate is 0.00%
+No.3 Good has 0 Bad has 200, Good rate is 0.00%
+No.4 Good has 0 Bad has 200, Good rate is 0.00%
+No.5 Good has 0 Bad has 200, Good rate is 0.00%
+No.6 Good has 0 Bad has 200, Good rate is 0.00%
+No.7 Good has 0 Bad has 200, Good rate is 0.00%
+No.8 Good has 0 Bad has 200, Good rate is 0.00%
+No.9 Good has 0 Bad has 200, Good rate is 0.00%
+No.10 Good has 0 Bad has 200, Good rate is 0.00%
+
+Invoke getPassengerState
+No.1 Good has 200 Bad has 0, Good rate is 100.00%
+No.2 Good has 200 Bad has 0, Good rate is 100.00%
+No.3 Good has 200 Bad has 0, Good rate is 100.00%
+No.4 Good has 200 Bad has 0, Good rate is 100.00%
+No.5 Good has 199 Bad has 1, Good rate is 99.50%
+No.6 Good has 200 Bad has 0, Good rate is 100.00%
+No.7 Good has 200 Bad has 0, Good rate is 100.00%
+No.8 Good has 200 Bad has 0, Good rate is 100.00%
+No.9 Good has 200 Bad has 0, Good rate is 100.00%
+No.10 Good has 200 Bad has 0, Good rate is 100.00%
+
+Invoke getPassengerState
+No.1 Good has 200 Bad has 0, Good rate is 100.00%
+No.2 Good has 200 Bad has 0, Good rate is 100.00%
+No.3 Good has 200 Bad has 0, Good rate is 100.00%
+No.4 Good has 200 Bad has 0, Good rate is 100.00%
+No.5 Good has 200 Bad has 0, Good rate is 100.00%
+No.6 Good has 200 Bad has 0, Good rate is 100.00%
+No.7 Good has 200 Bad has 0, Good rate is 100.00%
+No.8 Good has 200 Bad has 0, Good rate is 100.00%
+No.9 Good has 200 Bad has 0, Good rate is 100.00%
+No.10 Good has 199 Bad has 1, Good rate is 99.50%
+
+Invoke getPassengerState
+No.1 Good has 369 Bad has 631, Good rate is 36.90%
+No.2 Good has 423 Bad has 577, Good rate is 42.30%
+No.3 Good has 208 Bad has 792, Good rate is 20.80%
+No.4 Good has 110 Bad has 890, Good rate is 11.00%
+No.5 Good has 202 Bad has 798, Good rate is 20.20%
+No.6 Good has 22 Bad has 978, Good rate is 2.20%
+No.7 Good has 0 Bad has 1000, Good rate is 0.00%
+No.8 Good has 98 Bad has 902, Good rate is 9.80%
+No.9 Good has 110 Bad has 890, Good rate is 11.00%
+No.10 Good has 74 Bad has 926, Good rate is 7.40%
+
